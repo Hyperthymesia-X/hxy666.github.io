@@ -16,6 +16,22 @@
 	    document.getElementById('audios').play()
 	})
 	</script> -->
+	
+	<script>
+	let isPlaying = false;
+	const audioElement = document.getElementById('audios');
+	
+	document.addEventListener('click', function() {
+	    if (!isPlaying) {
+	        audioElement.play();
+	        isPlaying = true;
+	    }
+	});
+	
+	audioElement.addEventListener('pause', function() {
+	    isPlaying = false;
+	});
+	</script>
 </head>
 
 <body>
@@ -238,6 +254,10 @@
 <!-- <audio autoplay="autoplay" loop="loop" id="audios">
 	    <source src="music/music_test1.mp3" type="audio/mp3" />
 	</audio> -->
+	
+<audio autoplay="autoplay" loop="loop" id="audios">
+    <source src="music/music_test1.mp3" type="audio/mp3" />
+</audio>
 </body>
 
 </html>
