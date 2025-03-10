@@ -11,7 +11,9 @@
      document.getElementById('audios').play()
  })
  </script> -->
- 
+ <audio autoplay="autoplay" loop="loop" id="audios">
+     <source src="./music/4.mp3" type="audio/mp3" />
+ </audio>
  <script>
  let isPlaying = false;
  const audioElement = document.getElementById('audios');
@@ -39,9 +41,7 @@
 <!--  <audio autoplay="autoplay" loop="loop" id="audios">
       <source src="./music/4.mp3" type="audio/mp3" />
   </audio> -->
-  <audio autoplay="autoplay" loop="loop" id="audios">
-      <source src="./music/4.mp3" type="audio/mp3" />
-  </audio>
+
 <div class="bgcolor">
   <div style="z-index:100;" id="dowebok">
       <!--第一屏-->
@@ -50,9 +50,11 @@
             <div class="ly-txt01">
               <p class="ly-stxt01">尊敬的胡馨予同志：</p>
               <p class="ly-stxt02">组织认为今天是一个美好的日子</p>
-              <p class="ly-stxt03">首先祝你所有希望都能如愿</p>
-              <p class="ly-stxt04">其次祝你所有梦想都能实现</p>
-              <p class="ly-stxt05">最后祝你所有等待都能出现</p>
+              <p class="ly-stxt03">首先祝你所有希望都能如愿<br>
+									其次祝你所有梦想都能实现<br>
+									最后祝你所有等待都能出现</p>
+              <p class="ly-stxt04"></p>
+              <p class="ly-stxt05"></p>
             </div>
             <div class="ly-txt02">
               <p class="ly-stxt07"></p>
